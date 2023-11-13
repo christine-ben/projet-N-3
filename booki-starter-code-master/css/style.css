@@ -1,0 +1,690 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+/*variable----------*/
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+/*-------------------------------*/
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+/*general-----*/
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexCentre{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+/*---------------code logo+menu------------------------------*/
+
+.logo{
+    margin-right: auto;
+    width: 120px;
+    height: 50px;
+}
+
+.menu{
+    text-decoration: none;
+    padding: 30px;                            
+    color: black;
+    /*border-top: permet de paramétrer la bordure haute d'un élément.*/
+    border-top: 3px solid transparent;
+}
+.menu:hover {
+    border-top-color:blue;
+    color:blue;
+}
+/*------------fin code logo+menu------------------------------*/
+
+/*---------------code barre de recherche------------------------------*/
+/* FORM */
+
+.search_form {
+    display: flex;
+    width: 450px;
+    height: 50px;
+}
+
+.search_form_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 57px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.fa-location-dot {
+    padding-left: 3px;
+}
+
+.search_form_searchinput {
+    border: 2px solid #F2F2F2;
+    padding-left: 15px;
+    margin-right: -10px;
+    width: 350px;
+    font-weight: bold;
+    font-size: 17px;
+    height: 57px;
+    
+}
+
+.search_form_searchinput:focus {
+    border: 2px solid #F2F2F2;
+    outline: none;
+}
+
+.search_form_submitinput {
+    color: white;
+    background-color: #186ae6;
+    border-radius: 0px 15px 15px 0px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -6px;
+}
+  
+.search_form_submitinput:hover {
+    color: #0845a0;
+    cursor: pointer;
+}
+
+.search_text_icon {
+    font-size: 0;
+}
+/* FORM */
+/*--------------- fin code barre de recherche------------------------------*/
+
+/*---------------  code Filtre---------------------------------------------------*/
+.search_filters {
+    display: flex;
+    flex-wrap: wrap;/*Pour obtenir le « passage à la ligne », on ajoute la propriété 
+    flex-wrap avec la valeur wrap. lorsque la somme des tailles des éléments dépasse celle du conteneur.
+     Avec flex-wrap qui vaut wrap, les éléments passent à la ligne.*/
+    align-items: center;
+    margin-top: 5px;
+}
+
+.search_filters_title {
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+.search_filters_filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    margin: 20px 15px 15px 15px;
+   
+}
+
+.search_filters_filter:hover {
+    transform: scale(1.1);/*définit une transformation qui redimensionne un élément sur le plan 2D. Étant donné que le degré de 
+    mise à l'échelle est défini par un vecteur [sx, sy], il peut redimensionner 
+    les dimensions horizontales et verticales à différentes échelles      */
+    background-color: #7c9ac7;
+    cursor: pointer;
+}
+
+.search_filters_filter_icon {
+    width: 50px;
+    height: 50px;
+    color: #0065FC;
+    margin: -1px;
+    font-size: 17px;
+}
+
+.fa-solid.search_filters_filter_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_filters_filter_title {
+    background-color: transparent;
+    padding: 5px 20px;
+    color:black;
+    font-weight: bold;
+}
+h5{
+    font-size: 15px;
+    
+}
+
+/*--------------- fin code Filtre------------------------------------------------*/
+
+/*--------------- code information ------------------------------------------------*/
+.info{
+    display: flex;
+    align-items: center;
+}
+/*cette classe va nous permettr de faire le sercle au tour de l'icone*/
+.parantIcone{
+width: 20px;
+height: 20px;
+border: 2px solid #cecdcd;
+border-radius: 25px;
+margin-right: 5px;/*une marge a droite pour decaler un peut le texte*/
+font-size: 12px;
+}
+
+/*--------------- fin code information------------------------------------------------*/
+
+/*----------------code generale---------------------------*/
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+/*----------------fin code generale---------------------------*/
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+#afficher{
+    padding-top: 15px;
+}
+.card-hebergement {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows:auto;
+        grid-gap: 15px;
+        }
+        
+ 
+.card-hebergement div {
+    flex-basis: calc(33% - 40px);
+    width: auto;
+}
+
+.card img {
+    border-radius: 16px 16px 0 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+.card p, .card h4 {
+    margin: 5px
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px blue;
+    cursor: pointer;
+}
+.card .stars {
+    margin-top: auto;
+}
+/****** Populaires ***********/
+.card-popular {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-popular img {
+    border-radius: 16px 16px 0 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-popular p, .card-popular h4 {
+    margin: 5px
+}
+.card-popular:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px blue;
+    cursor: pointer;
+}
+.card-popular .stars {
+    margin-top: auto;
+}
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card-popular{
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/*---------Activité à Marseille----------------------------*/
+
+.activites {
+    margin: 40px 10px 20px 10px;
+}
+.activites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 35px;
+    transition: all 0.2s;
+    min-height: 400px;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.largeur {
+    max-width: 299px;
+    min-width: 70px;
+}
+.card-activity {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    height:412px;
+    border-radius: 16px;
+    box-shadow: 0 0 8px grey;
+}
+
+.card-100:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px blue;
+    cursor: pointer;
+}
+.card-100 img {
+    width: 100%;   
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+/*  hauteur carte*/
+.card-100 img {
+    height:85%;
+}
+/*-----footer------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--main-bg-color);
+    padding: 30px 0; 
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer h4 {
+    margin: 0 0 10px 0;
+}
+footer p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.footer-gauche, 
+.footer-milieu, 
+.footer-droite{
+    min-width: 30%;
+    min-height: 100px;
+}
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    html {
+        min-width: 768px;
+        max-width: 1024px;
+    }
+    
+    main {
+        padding: 5px;
+    }
+
+        /* FILTERS */
+
+        .search_filters {
+            margin: 5px 0px 10px 0px;
+        }
+        .search_filters_title {
+            width: 100%;
+        }
+        
+        .search_filters_filter {
+            margin: 5px 15px;
+        }
+    
+
+    /* FILTERS */
+
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+/*hebergements---------------------------------------*/
+    .hebergements {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .card-hebergement{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows:auto;
+        grid-gap: 15px;
+        }
+/*hebergements---------------------------------------*/
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+/*Activité*/
+.card-100 {
+width: auto;
+}
+.largeur {
+  width: 200px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* */
+        
+            html {
+                min-width: 524px;
+                max-width: 768px;
+                margin: 0;
+            }
+        
+    
+        /*--------section: menu----------- */
+    
+        .box{
+            display: block;
+        }
+        .box img {/*pour le logo*/
+            display: block;
+            margin: auto;
+            padding-left: 40px;
+        }
+    
+        .box-menu {
+            display: flex;
+            /*La propriété flex-basis détermine la base de flexibilité utilisée comme taille initiale principale pour un élément flexible. 
+            Cette propriété détermine la taille de la boîte de contenu sauf si une autre boîte est visée par box-sizing. */
+            flex-basis: 100%;
+            text-align: center;
+        }
+        .box-menu a {
+            flex-basis: 50%;
+            text-align: center;
+            justify-content: center;
+            border-bottom: 3px solid #cecdcd;
+        }
+        .box-menu a:hover {
+            border-top-color: transparent;
+            border-bottom-color: blue;  
+        }
+    /*------fin section menu------------*/
+
+    /* -----Section: Search bar------------------------------*/
+    /*titre et sous titre*/   
+    .backBleu .flexCentre .buttonSearch{
+        padding: 0px 15px 0px 15px;
+        margin: auto;
+    }
+    
+    /*-------- code barre de recherche----------- */
+
+    .search_form {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search_form_icon {
+        width: 50px;
+    }
+
+    .search_form_searchinput {
+        width: 100%;
+    }
+
+    .search_form_submitinput {
+        border-radius: 15px;
+        width: 60px;
+    }
+
+    .search_form_submitinput_text {
+        display: none;
+    }
+
+    .search_text_icon {
+        font-size: 17px;
+    }
+
+/* ---fin code barre de recherche---------- */
+ /* -----fin Section: Search bar------------------------------*/
+
+ /* FILTERS --------------------------*/
+
+.search_filters {
+    margin: 5px 0px 10px 0px;
+}
+.search_filters_title {
+    width: 100%;
+}
+
+.search_filters_filter {
+    margin: 5px 10px;
+}
+
+/*-------fin FILTERS----------------------------- */
+
+/*-------------------footer-------------*/
+    footer {
+        display: block;
+        padding-left: 30px;
+    }
+    .footer-gauche, .footer-droite {
+        margin-bottom: 25px;
+    }
+/*-------------------fin footer-------------*/
+
+
+    /* -------Populaire ------*/
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .populaires-cards{
+        flex-direction: column;
+    }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .populaires-cards a {
+        width: 95%;
+    }
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    .card-popular img{
+        height: 130px;
+        width: 100%;
+    }
+    /* -------fin Populaire----------*/
+    
+    /* -------hébergement----------*/
+    .card {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+    }
+    .card .stars {
+        margin-top: auto;
+    }
+    .card-hebergement {
+        display: grid;
+        grid-template-columns:auto;
+     }
+    /* -------fin hébergement----------*/
+    
+    /* ----------activités---------------*/
+    .activites {
+        margin: 40px 0 20px 0;
+    }
+    .activites-list div {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .card-100{
+        height: 200px;
+    } 
+    .activites-list img {
+        height: 150px;
+        width: 100%;
+    }
+ 
+    .vertical-center {
+        margin: auto 0;
+        /*inherit:
+        Applique la valeur de l'élément parent sur l'élément ciblé. Cela « force » l'héritage.
+        Le inheritmot-clé spécifie qu'une propriété doit hériter de sa valeur de son élément parent.*/
+        align-items: inherit;
+        margin-left: 20px;
+        height: 60px;
+    }
+    .largeur {
+        max-width: 100%;
+    }
+    .card-activity {
+        border-radius: 16px;
+        box-shadow: 0 0 8px var(--dark-grey);
+    } 
+    /* ----------fin activités---------------*/ 
+}

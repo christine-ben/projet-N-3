@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!--L' <header>élément sémantique représente un conteneur pour le contenu d'introduction ou un ensemble de liens de navigation.-->
+        <header >
+            <!--code logo+menu----------------------------------------------------> 
+            <div class=" box flexBetween">
+                <div>
+                    <a href="#" ><img  class="logo" src="./images/logo/Booki.png" alt="Logo du site Booki"></a>
+                </div>
+            <!--L' <nav>element semantique définit un ensemble de liens de navigation.-->
+                <nav class="box-menu flexCentre">
+                    <a  class="menu" href="#lien-Hébergements">Hébergements</a>
+                    <a  class="menu" href="#lien-activites">Activités</a>
+                </nav>
+            </div>
+        <!--fin code logo+menu----------------------------------------------------> 
+        </header><br><br>
+    <main>
+    <!--La <main>balise sémantique spécifie le contenu principal d'un document.
+    Le contenu à l'intérieur de l' <main>élément doit être unique au document. Il ne doit contenir aucun contenu répété 
+    dans les documents tels que les barres latérales, les liens de navigation, les informations sur les droits d'auteur, 
+    les logos du site et les formulaires de recherche.
+    Remarque : Il ne doit pas y avoir plus d'un <main>élément dans un document.
+     L' <main>élément ne doit PAS être un descendant d'un élément <article>, <aside>, <footer>, <header> ou <nav>.-->
+
+        <!--code titre+sous-titre----------------------------------------------------> 
+        <div >
+            <h2 class="section-title">Trouver votre hébergement pour les vacances de rêve</h2> 
+            <p>En plein centre-ville ou en pleine nature</p><br>
+        </div>
+         <!--fin code titre+sous-titre---------------------------------------------------->
+         
+         <!--code barre de recherche----------------------------------------------------> 
+         <form class="search_form" method="GET" action="#">
+            <div class="search_form_icon"><i class="fa-solid fa-location-dot" style="color: #1b1e22;"></i></div>
+            <input class="search_form_searchinput" type="search" placeholder="Marseille, France" />
+            <button class="search_form_submitinput">
+                <span class="search_form_submitinput_text">Rechercher</span>
+                <i class="fa-solid fa-magnifying-glass search_text_icon" style="color:white;"></i>
+            </button>
+        </form><br>
+         <!-- fin code barre de recherche---------------------------------------------------->
+        
+
+         <!--code pour le filtre----------------------------------------------------> 
+         <div class="search_filters">
+            <h2 class="search_filters_title Raleway_bold">Filtres</h2>
+
+            <div class="search_filters_filter">
+                <i class="fa-solid fa-money-bill-wave search_filters_filter_icon"></i>
+                <h5 class="search_filters_filter_title Raleway_bold">Économique</h5>
+            </div>
+            <div class="search_filters_filter">
+                <i class="fa-solid fa-child-reaching search_filters_filter_icon"></i>
+                <h5 class="search_filters_filter_title Raleway_bold">Familial</h5>
+            </div>
+            <div class="search_filters_filter">
+                <i class="fa-solid fa-heart search_filters_filter_icon"></i>
+                <h5 class="search_filters_filter_title Raleway_bold">Romantique</h5>
+            </div>
+            <div class="search_filters_filter">
+                <i class="fa-sharp fa-solid fa-fire search_filters_filter_icon" ></i>
+                <h5 class="search_filters_filter_title Raleway_bold">Nos pépites</h5>
+            </div>
+        </div>
+        
+         <!--fin code pour le filtre----------------------------------------------------> 
+         
+         <!--code pour information-------------------------------------------------------->
+        <div class="info">
+            <div class="parantIcone flexCentre"><i class="fa-solid fa-info"></i></div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div> <br>
+         
+         <!--fin de code pour information-------------------------------------------------------->
+
+            <div class="hebergements-and-populaires">
+            <!--code du bloc hebergements---------------------------------------------------------------->  
+            
+            <!-- Une section element sémantique :est un regroupement thématique de contenu, généralement accompagné d'un titre.
+            ’il est important de correctement structurer le contenu principal de la page en plusieurs zones.
+            Pour cela, il existe la balise <section>--> 
+                <section class="hebergements" id="lien-Hébergements">
+                    <h2 class="section-title">Hébergement à Marseille</h2><br>
+                    <div class="card-hebergement">
+                        <!--1 carte-->
+                        <div class="card">
+                            <img src="./images/hebergements/fred-kleber.jpg" alt="Chambre lumineuse avec deux lits simples. ">
+                            <h4>Hôtel du port</h4>
+                            <p>Nuit à partir de <b>52€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                        <!--2 carte-->
+                        <div class="card">
+                            <img src="./images/hebergements/febrian-zakaria.jpg" alt="Chambre lumineuse classique avec TV.">
+                            <h4>Hôtel Chez Amina</h4>
+                            <p>Nuit à partir de <b>96€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                        <!--3 carte-->
+                        <div class="card">
+                            <img src="./images/hebergements/reisetopia.jpg" alt="Chambre confort avec lit double. ">
+                            <h4>Hôtel Les mouettes</h4>
+                            <p>Nuit à partir de <b>76€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                         <!--4 carte-->
+                         <div class="card">
+                            <img src="./images/hebergements/annie-spratt.jpg" alt="Chambre lumineuse typique bord de mer.">
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de <b>46€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                         <!--5 carte-->
+                         <div class="card">
+                            <img src="./images/hebergements/marcus-loke.jpg" alt="Chambre lumineuse avec lit superposé donant sur le centre ville">
+                            <h4>Auberge de la Cannebière</h4>
+                            <p>Nuit à partir de <b>25€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                         <!--6 carte-->
+                         <div class="card">
+                            <img src="./images/hebergements/nicate-lee.jpg" alt="Chambre rustique avec lits superposés.">
+                            <h4>Auberge Le Panier</h4>
+                            <p>Nuit à partir de <b>23€</b></p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-solid fa-star star-blue"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#"><h3 id="afficher">Afficher plus</h3></a>
+                </section>
+        <!-- fin du code  bloc hebergements---------------------------------------------------------------->   
+        
+        <!--code du bloc populaires------------------------------------------------------------------------->        
+                <section class="populaires">
+                    <div class="populaires-title">
+                        <h2 class="section-title">Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="populaires-cards">
+                        <a href="#">
+                            <!--L' <article>élément sémantique spécifie un contenu indépendant et autonome.
+                            Un article doit avoir un sens en soi et il doit être possible de le diffuser
+                             indépendamment du reste du site Web.-->
+                            <article class="card-popular">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" ></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card-popular">
+                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card-popular">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star star-blue" ></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" ></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+        <!-- fin code du bloc populaires------------------------------------------------------------------------->          
+            </div><br><br>
+
+        <!-- code du bloc Activités à Marseille------------------------------------------------------------------------->  
+        <section class="activites" id="lien-activites">
+            <h2>Activités à Marseille</h2><br>
+            <div class="activites-list">
+                <div class="card-100 largeur card-activity">
+                    <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port ">
+                    <div class="vertical-center"><h4>Vieux Port</h4></div>
+                </div>
+                <div class="card-100 largeur card-activity">
+                    <img src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègues(photo avec des rocher)">
+                    <div class="vertical-center"><h4>Fort de Pomègues</h4></div>
+                </div>
+                <div class="card-100 largeur card-activity">
+                    <img src="./images/activites/kilyan-sockalingum.jpg" alt="Parc Nationnal des Calanques">
+                    <div class="vertical-center"><h4>Parc Nationnal des Calanques</h4></div>
+                </div>
+                <div class="card-100 largeur card-activity" >
+                    <img src="./images/activites/florian-wehde.jpg" alt="photo d'une ville Notre-Dame-de-la-Garde">
+                    <div class="vertical-center"><h4>Notre-Dame-de-la-Garde</h4></div>
+                </div>    
+            </div>
+        </section><br><br>
+       <!--fin code du bloc Activités à Marseille------------------------------------------------------------------------->  
+        </main>
+        <footer>
+            <div class="footer-gauche">
+                <h4>A propos</h4>
+                <div>
+                    <p><a href="#">Fonctionnement du site</a></p>
+                    <p><a href="#">Conditions générales de ventes</a></p>
+                    <p><a href="#">Données et confidentialité</a></p>
+                </div>
+            </div>
+            <div class="footer-milieu">
+                <h4>Nos hébergements</h4>
+                <div>
+                    <p><a href="#">Charte qualité</a></p>
+                    <p><a href="#">Proposer votre hôtel</a></p>
+                </div>
+            </div>
+            <div class="footer-droite">
+                <h4>Assistance</h4>
+                <div>
+                    <p><a href="#">Centre d'aide</a></p>
+                    <p><a href="#">Nous contacter</a></p>
+                </div>
+            </div>
+        <!--L' <footer>élément sémantique cette balise sert principalement à délimiter la pied de page.
+            Un <footer>élément contient généralement :
+            informations sur la paternité
+            Informations sur le droit d'auteur
+            coordonnées
+            plan du site
+            liens vers le haut
+            documents connexes-->
+        </footer>
+    </div>
+</body>
+
+</html>
